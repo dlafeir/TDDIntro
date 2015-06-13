@@ -14,6 +14,10 @@ public class Account {
         this.balance += creditAmount;
     }
 
+    public void debit(int debitAmount){
+        this.balance -= debitAmount;
+    }
+
     public int getBalance(){
         return this.balance;
     }
