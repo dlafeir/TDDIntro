@@ -15,7 +15,9 @@ public class Account {
     }
 
     public void debit(int debitAmount){
-        this.balance -= debitAmount;
+        if((balance-debitAmount) >= 0){
+            this.balance -= debitAmount;
+        }
     }
 
     public int getBalance(){
